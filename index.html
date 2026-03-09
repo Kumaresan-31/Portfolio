@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kumaresan B - Computer Science Student & Aspiring Software Developer Portfolio. Showcasing projects in Node.js, AI, and Web Development.">
+    <title>Kumaresan B | CS Student & Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="gradient-text">KB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-text animate-up">
+                <h2 class="badge">Welcome to my portfolio</h2>
+                <h1>Hi, I'm <span class="gradient-text">Kumaresan B</span></h1>
+                <p class="subtitle">Computer Science Student | Aspiring Software Developer</p>
+                <p class="tagline">Passionate about Programming, Web Development, and Problem Solving.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image animate-up" style="animation-delay: 0.2s;">
+                <div class="image-blob">
+                    <img id="profile-img" src="assets/images/profile.png" alt="Kumaresan B">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-up">
+                    <p>I am a dedicated Computer Science student with a deep passion for software development. My
+                        journey in tech is driven by curiosity and a desire to build solutions that make a difference.
+                    </p>
+                    <p>I specialize in building functional, user-centric applications and I'm constantly learning new
+                        technologies to stay ahead in this fast-evolving field. Whether it's backend logic or frontend
+                        aesthetics, I enjoy every aspect of the development process.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="code-2"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="terminal"></i>
+                            <span>Clean Code</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="layers"></i>
+                            <span>Project Builder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- C Programming -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="code"></i></div>
+                    <h3>C Programming</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- Python -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="terminal"></i></div>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <!-- JavaScript -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="file-code"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <!-- Node.js -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="server"></i></div>
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <!-- HTML -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="layout"></i></div>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <!-- CSS -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="palette"></i></div>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- Git & GitHub -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="github"></i></div>
+                    <h3>Git & GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <!-- DBMS / SQL -->
+                <div class="skill-card animate-up">
+                    <div class="skill-icon"><i data-lucide="database"></i></div>
+                    <h3>DBMS / SQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Top Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Course Registration System -->
+                <div class="project-card animate-up">
+                    <div class="project-image">
+                        <img src="assets/images/project4.png" alt="Course Registration System">
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Course Registration System</h3>
+                        <p>A comprehensive system for students to browse, register, and manage academic courses with
+                            real-time availability tracking.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../COURSE_REGISTRATION_SYSTEM" target="_blank"><i data-lucide="github"></i>
+                                Code</a>
+                            <a href="../COURSE_REGISTRATION_SYSTEM/frontend/index.html" target="_blank"><i
+                                    data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Quiz Registration System -->
+                <div class="project-card animate-up" style="animation-delay: 0.1s;">
+                    <div class="project-image">
+                        <img src="assets/images/project1.png" alt="Quiz Registration System">
+                        <div class="project-overlay">
+                            <a href="../quiz-registration-system/frontend/index.html" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Quiz Registration System</h3>
+                        <p>Interactive platform featuring 10 subjects with 10 questions each, including user results and
+                            admin management.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>DBMS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../quiz-registration-system" target="_blank"><i data-lucide="github"></i> Code</a>
+                            <a href="../quiz-registration-system/frontend/index.html" target="_blank"><i
+                                    data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Expense Tracker -->
+                <div class="project-card animate-up" style="animation-delay: 0.2s;">
+                    <div class="project-image">
+                        <img src="assets/images/project3.png" alt="Expense Tracker">
+                        <div class="project-overlay">
+                            <a href="../Expense_Tracker-main" class="view-btn">View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Expense Tracker</h3>
+                        <p>Personal finance management tool to track income and expenditures with visual data
+                            representation and budgeting features.</p>
+                        <div class="project-tags">
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../Expense_Tracker-main" target="_blank"><i data-lucide="github"></i> Code</a>
+                            <a href="../Expense_Tracker-main" target="_blank"><i data-lucide="external-link"></i>
+                                Files</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Automatic Code Quality Analyzer -->
+                <div class="project-card animate-up" style="animation-delay: 0.3s;">
+                    <div class="project-image">
+                        <img src="assets/images/project2.png" alt="Code Quality Analyzer">
+                        <div class="project-overlay">
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Automatic Code Quality Analyzer</h3>
+                        <p>Intelligent tool that scans source code to detect performance bottlenecks and suggests
+                            optimizations based on best practices.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Static Analysis</span>
+                            <span>Regex</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i data-lucide="github"></i> Code</a>
+                            <a href="#"><i data-lucide="external-link"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card animate-up">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div class="cert-info">
+                        <h3>Full Stack Development</h3>
+                        <p>Issued by Coursera / Udemy</p>
+                    </div>
+                </div>
+                <div class="cert-card animate-up">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div class="cert-info">
+                        <h3>Python for Data Science</h3>
+                        <p>Issued by IBM / NPTEL</p>
+                    </div>
+                </div>
+                <div class="cert-card animate-up">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div class="cert-info">
+                        <h3>Database Management Systems</h3>
+                        <p>Issued by NPTEL / Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-up">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>kumaresanb2007@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>https://www.linkedin.com/in/kumaresan-boopathi-400597358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                                </p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i data-lucide="github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>https://github.com/Kumaresan-31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container animate-up" style="animation-delay: 0.1s;">
+                    <form class="contact-form" action="https://formspree.io/f/mojkjkzk" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Kumaresan B. Made with <i data-lucide="heart" class="heart-icon"></i> for a better web.</p>
+            <div class="social-links">
+                <a href="#"><i data-lucide="github"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
