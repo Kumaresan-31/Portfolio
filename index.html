@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumaresan B - Computer Science Student & Full Stack Developer. Showcasing projects in Node.js, MongoDB, AI, and Web Development.">
+    <title>Kumaresan B | Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cursor glow -->
+<div id="cursor-glow"></div>
+
+<!-- Particles canvas -->
+<div id="tsparticles"></div>
+
+<!-- Viewport border -->
+<div class="viewport-border"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-content">
+        <div class="logo"><span>&lt;/&gt;</span> KB</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                <i data-lucide="sun" id="theme-icon"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary nav-cta">Get In Touch</a>
+            <div class="menu-toggle" id="mobile-menu"><i data-lucide="menu"></i></div>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero section">
+    <div class="container hero-inner">
+        <div class="hero-badge reveal">
+            <span class="badge-dot"></span> Available For Freelance
+        </div>
+        <h1 class="reveal">Hi, I'm <span class="name-white">Kumaresan</span> <span class="gradient-text">B</span></h1>
+        <div class="typewriter-wrap reveal">
+            <span id="typewriter"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc reveal">Building scalable web apps that users love — Node.js, Express, MySQL, MongoDB.</p>
+        <div class="cta-buttons reveal">
+            <a href="#projects" class="btn btn-primary magnetic">View My Work <i data-lucide="arrow-right" class="btn-icon"></i></a>
+            <a href="#contact" class="btn btn-outline magnetic"><i data-lucide="mail" class="btn-icon"></i> Let's Talk</a>
+        </div>
+        <div class="hero-stats reveal">
+            <div class="stat-item">
+                <span class="stat-num gradient-text">7+</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num gradient-text">10+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num gradient-text">2</span>
+                <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num gradient-text">1+</span>
+                <span class="stat-label">Year Exp</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">Who I Am</span>
+            <h2>Engineer by craft, <span class="gradient-text">builder by passion</span></h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>I'm a final-year Computer Science student with a deep passion for full-stack web development. My journey is driven by curiosity and a desire to build products that make a real difference.</p>
+                <p>I specialise in backend logic with Node.js & Express, relational databases (MySQL), and clean frontend interfaces. Whether it's REST APIs or responsive UI, I enjoy every layer of the stack.</p>
+                <div class="about-cards">
+                    <div class="about-card magnetic">
+                        <span class="about-card-icon">💻</span>
+                        <h4>Full Stack</h4>
+                        <p>End-to-end dev</p>
+                    </div>
+                    <div class="about-card magnetic">
+                        <span class="about-card-icon">🧠</span>
+                        <h4>AI Enthusiast</h4>
+                        <p>ML & AI APIs</p>
+                    </div>
+                    <div class="about-card magnetic">
+                        <span class="about-card-icon">⚡</span>
+                        <h4>Fast Learner</h4>
+                        <p>New tech daily</p>
+                    </div>
+                    <div class="about-card magnetic">
+                        <span class="about-card-icon">🏆</span>
+                        <h4>Hackathons</h4>
+                        <p>2+ competed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-profile reveal">
+                <div class="profile-card glass-card magnetic">
+                    <div class="profile-avatar-wrap">
+                        <img src="assets/images/profile.png" alt="Kumaresan B" class="profile-avatar">
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <h3>Kumaresan B</h3>
+                    <p class="profile-role gradient-text">Full Stack Developer</p>
+                    <p class="profile-location"><i data-lucide="map-pin" style="width:14px;height:14px;"></i> Salem, Tamil Nadu, India</p>
+                    <p class="profile-motto">"Code is my craft, products are my passion."</p>
+                    <div class="profile-social">
+                        <a href="https://github.com/Kumaresan-31" target="_blank" class="social-icon-btn magnetic"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kumaresan-boopathi-400597358" target="_blank" class="social-icon-btn magnetic"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:kumaresanb2007@gmail.com" class="social-icon-btn magnetic"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="skills section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">What I Know</span>
+            <h2>Technologies I <span class="gradient-text">build with</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group glass-card reveal magnetic">
+                <h3><i data-lucide="layout" class="sg-icon"></i> Frontend</h3>
+                <div class="skill-tags">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+                </div>
+            </div>
+            <div class="skill-group glass-card reveal magnetic">
+                <h3><i data-lucide="server" class="sg-icon"></i> Backend</h3>
+                <div class="skill-tags">
+                    <span>Node.js</span><span>Express.js</span><span>Python</span><span>C</span><span>REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-group glass-card reveal magnetic">
+                <h3><i data-lucide="database" class="sg-icon"></i> Database</h3>
+                <div class="skill-tags">
+                    <span>MySQL</span><span>MongoDB</span><span>SQLite</span><span>DBMS</span>
+                </div>
+            </div>
+            <div class="skill-group glass-card reveal magnetic">
+                <h3><i data-lucide="wrench" class="sg-icon"></i> Tools</h3>
+                <div class="skill-tags">
+                    <span>Git</span><span>GitHub</span><span>Linux</span><span>Postman</span><span>VS Code</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="projects section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">What I've Built</span>
+            <h2>Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-sub">Real-world apps built with purpose and shipped with care.</p>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image">
+                    <img src="assets/images/project4.png" alt="Course Registration System">
+                    <div class="project-overlay"><a href="../COURSE_REGISTRATION_SYSTEM/frontend/index.html" target="_blank" class="view-btn">View Details →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Course Registration System</h3>
+                    <p>A comprehensive system for students to browse, register, and manage academic courses with real-time availability tracking.</p>
+                    <div class="project-tags"><span>Node.js</span><span>MySQL</span><span>Express</span></div>
+                    <div class="project-links">
+                        <a href="../COURSE_REGISTRATION_SYSTEM" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="../COURSE_REGISTRATION_SYSTEM/frontend/index.html" target="_blank"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image">
+                    <img src="assets/images/project1.png" alt="Quiz Registration System">
+                    <div class="project-overlay"><a href="../quiz-registration-system/frontend/index.html" target="_blank" class="view-btn">View Details →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Quiz Registration System</h3>
+                    <p>Interactive platform featuring 10 subjects with 10 questions each, including user results and admin management.</p>
+                    <div class="project-tags"><span>Node.js</span><span>JavaScript</span><span>DBMS</span></div>
+                    <div class="project-links">
+                        <a href="../quiz-registration-system" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="../quiz-registration-system/frontend/index.html" target="_blank"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image">
+                    <img src="assets/images/project3.png" alt="Expense Tracker">
+                    <div class="project-overlay"><a href="../Expense_Tracker-main" target="_blank" class="view-btn">View Code →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Expense Tracker</h3>
+                    <p>Personal finance management tool to track income and expenditures with visual data representation and budgeting features.</p>
+                    <div class="project-tags"><span>Android</span><span>Java</span><span>SQLite</span></div>
+                    <div class="project-links">
+                        <a href="../Expense_Tracker-main" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="../Expense_Tracker-main" target="_blank"><i data-lucide="external-link"></i> Files</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image">
+                    <img src="assets/images/project2.png" alt="Code Quality Analyzer">
+                    <div class="project-overlay"><a href="#" class="view-btn">View Details →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Automatic Code Quality Analyzer</h3>
+                    <p>Intelligent tool that scans source code to detect performance bottlenecks and suggests optimizations based on best practices.</p>
+                    <div class="project-tags"><span>Python</span><span>Static Analysis</span><span>Regex</span></div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image project-video-wrap">
+                    <video src="assets/videos/ecommerce.mp4" poster="assets/images/shopwave.png" muted loop playsinline class="project-video"></video>
+                    <div class="project-overlay"><a href="https://shopwaveshopwave.onrender.com" target="_blank" class="view-btn">Live Demo →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>ShopWave — E-Commerce Platform</h3>
+                    <p>AI-powered full-stack e-commerce app with 200+ products, real-time order tracking, admin dashboard, coupon system &amp; fraud detection.</p>
+                    <div class="project-tags"><span>Node.js</span><span>Express</span><span>MySQL</span><span>JWT</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kumaresan-31/Shopwave" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://shopwaveshopwave.onrender.com" target="_blank"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image project-video-wrap">
+                    <video src="assets/videos/project-management.mp4" poster="assets/images/proxima.png" muted loop playsinline class="project-video"></video>
+                    <div class="project-overlay"><a href="https://github.com/Kumaresan-31" target="_blank" class="view-btn">View Code →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Proxima — Project Management Tool</h3>
+                    <p>Trello/Asana-style Kanban board with real-time collaboration via Socket.IO, drag-and-drop tasks, and instant notifications.</p>
+                    <div class="project-tags"><span>Node.js</span><span>MongoDB</span><span>Socket.IO</span><span>JWT</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kumaresan-31" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card glass-card reveal magnetic">
+                <div class="project-image project-video-wrap">
+                    <video src="assets/videos/social.mp4" poster="assets/images/vibe.png" muted loop playsinline class="project-video"></video>
+                    <div class="project-overlay"><a href="https://github.com/Kumaresan-31" target="_blank" class="view-btn">View Code →</a></div>
+                </div>
+                <div class="project-info">
+                    <h3>Vibe — Social Media Platform</h3>
+                    <p>Full-stack mini social network with posts, likes, comments, follow system, real-time notifications and personalized feed.</p>
+                    <div class="project-tags"><span>Node.js</span><span>MongoDB</span><span>Express</span><span>Vanilla JS</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kumaresan-31" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i data-lucide="external-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="projects-cta reveal glass-card">
+            <p>Want to build something together? Available for freelance, internships and interesting projects.</p>
+            <a href="#contact" class="btn btn-primary magnetic">Start a Conversation <i data-lucide="arrow-right" class="btn-icon"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="education section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">My Journey</span>
+            <h2>Academic <span class="gradient-text">Journey</span></h2>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card magnetic">
+                        <span class="timeline-year">2023 – 2027 · Ongoing</span>
+                        <h3>B.E. Computer Science Engineering</h3>
+                        <p>Kongu Engineering College, Erode</p>
+                        <div class="timeline-tags"><span>Full Stack</span><span>DBMS</span><span>OS</span><span>AI/ML</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card magnetic">
+                        <span class="timeline-year">Passed Out — 2023</span>
+                        <h3>Higher Secondary Education (12th Grade)</h3>
+                        <p>Computer Science Group</p>
+                        <div class="timeline-tags"><span>Computer Science</span><span>Mathematics</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card magnetic">
+                        <span class="timeline-year">Certifications</span>
+                        <h3>Professional Certifications</h3>
+                        <p>Coursera · IBM · NPTEL · Microsoft</p>
+                        <div class="timeline-tags"><span>Full Stack Dev</span><span>Python for DS</span><span>DBMS</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="edu-stats reveal">
+                <div class="edu-stat-card glass-card magnetic">
+                    <span class="edu-stat-num gradient-text">7+</span>
+                    <span class="edu-stat-label">Projects Built</span>
+                </div>
+                <div class="edu-stat-card glass-card magnetic">
+                    <span class="edu-stat-num gradient-text">10+</span>
+                    <span class="edu-stat-label">Technologies Mastered</span>
+                </div>
+                <div class="edu-stat-card glass-card magnetic">
+                    <span class="edu-stat-num gradient-text">2</span>
+                    <span class="edu-stat-label">Hackathons Competed</span>
+                </div>
+                <div class="edu-stat-card glass-card magnetic edu-stat-wide">
+                    <span class="edu-stat-num gradient-text">100%</span>
+                    <span class="edu-stat-label">Dedication</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label">Let's Talk</span>
+            <h2>Let's build something <span class="gradient-text">amazing</span></h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                <div class="contact-cards">
+                    <a href="mailto:kumaresanb2007@gmail.com" class="contact-card glass-card magnetic">
+                        <i class="fas fa-envelope contact-card-icon"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kumaresanb2007@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kumaresan-boopathi-400597358" target="_blank" class="contact-card glass-card magnetic">
+                        <i class="fab fa-linkedin contact-card-icon"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>kumaresan-boopathi</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Kumaresan-31" target="_blank" class="contact-card glass-card magnetic">
+                        <i class="fab fa-github contact-card-icon"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>Kumaresan-31</p>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-card glass-card magnetic">
+                        <i data-lucide="map-pin" class="contact-card-icon-lucide"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Salem, Tamil Nadu, India</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="reveal">
+                <form id="contact-form" class="contact-form glass-card" action="https://formspree.io/f/mojkjkzk" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic" id="submit-btn" style="width:100%;justify-content:center;">
+                        Send Message <i data-lucide="send" class="btn-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container footer-content">
+        <p>&copy; 2026 Kumaresan B — Built with <i data-lucide="heart" class="heart-icon"></i> &amp; passion</p>
+        <div class="footer-social">
+            <a href="https://github.com/Kumaresan-31" target="_blank" class="social-icon-btn magnetic"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kumaresan-boopathi-400597358" target="_blank" class="social-icon-btn magnetic"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:kumaresanb2007@gmail.com" class="social-icon-btn magnetic"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
